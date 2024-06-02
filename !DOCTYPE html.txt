@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .products, .about, .contact {
+            margin: 2rem 0;
+        }
+        .product-item {
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .cart {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronic Store</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Produtos</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#contact">Contato</a>
+        <a href="#cart">Carrinho de Compras</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="home">
+            <h2>Bem-vindo à Electronic Store</h2>
+            <p>Seu destino para os melhores produtos eletrônicos.</p>
+        </section>
+        <section id="products" class="products">
+            <h2>Produtos</h2>
+            <div class="product-item">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <p>A Electronic Store é uma empresa dedicada a fornecer os melhores produtos eletrônicos com os melhores preços.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="cart" class="cart">
+            <h2>Carrinho de Compras</h2>
+            <p>Seu carrinho está vazio.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Electronic Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
